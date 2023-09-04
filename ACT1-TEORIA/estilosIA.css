@@ -1,0 +1,223 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ff6699;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ff99cc;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar div {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.submenu a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Estilos para secciones */
+section {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para títulos */
+h1, h2, p {
+    text-align: center;
+}
+
+/* Estilos para formulario */
+form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ff6699;
+    outline: none;
+}
+  
+input[type="submit"] {
+    background-color: #ff6699; 
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: #ff99cc;
+} 
+
+/* Estilos para opciones de curso */
+.curso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.curso a {
+    background-color: #ff99cc;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #ff6699;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.curso a:hover {
+    background-color: #ff6699;
+}
+
+/* Estilos para el footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    border: 2px solid #ff6699;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar div {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .dropdown {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .submenu {
+        position: static;
+        display: none;
+        background-color: #f0f0f0;
+        min-width: 100%;
+    }
+
+    .submenu a {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .dropdown:hover .submenu {
+        display: block;
+    }
+
+    .curso a {
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    
+    form {
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
